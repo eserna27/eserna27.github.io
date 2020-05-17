@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+header {
+  height: 4rem;
+  width: 100vw;
+}
+
+header nav {
+  height: 100%;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+header nav .nav-logo {
+  font-family: 'Rock Salt', cursive;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}
+
+header nav .nav-logo a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav .nav-menu {
+  text-align: end;
+  margin-right: 2rem;
+}
+
+header nav .nav-menu a {
+  text-decoration: none;
+  color: lightslategray;
+}
+
+header nav .nav-menu a:hover {
+  color: dimgray;
+  text-decoration: underline;
+}
