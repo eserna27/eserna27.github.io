@@ -3,13 +3,11 @@
   <head>
     <%= render "head", metadata: site.metadata, title: resource.data.title %>
   </head>
-  <body class="<%= resource.data.layout %> <%= resource.data.page_class %>">
-    <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
-
-    <main>
+  <body class="d-flex justify-content-center align-items-center bg-black bg-opacity-10 min-vh-100 overflow-auto <%= resource.data.layout %> <%= resource.data.page_class %>">
+    <%= render "navbar" %>
+    <main class="container rounded bg-white my-4 overflow-auto" style="min-height: 75vh;">
       <%= yield %>
     </main>
-
-    <%= render "footer", metadata: site.metadata %>
+    <%= render "footer" %>
   </body>
 </html>
